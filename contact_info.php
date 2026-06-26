@@ -16,6 +16,21 @@ $crmConfig = [
                      WHERE m.contact = ?
                      ORDER BY m.timestamp ASC",
     ],
+    'dds' => [
+        'db'    => 'wazzup_dds',
+        'query' => "SELECT m.direction, m.timestamp
+                     FROM message m
+                     WHERE m.contact = ?
+                     ORDER BY m.timestamp ASC",
+    ],
+    'daso' => [
+        'db'    => 'wazzup_daso',
+        'query' => "SELECT m.direction, m.timestamp
+                     FROM message m
+                     WHERE m.contact = ?
+                     ORDER BY m.timestamp ASC",
+    ],
+
 ];
 
 $crm = $_GET['crm'] ?? null;

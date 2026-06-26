@@ -14,6 +14,18 @@ $crmConfig = [
                      WHERE notifications > 0 AND platform = 'whatsapp'
                      AND last_message BETWEEN ? AND ?",
     ],
+    'dds' => [
+        'db'    => 'wazzup_dds',
+        'query' => "SELECT id as phone, last_message FROM contacts
+                     WHERE notifications > 0 AND platform = 'whatsapp'
+                     AND last_message BETWEEN ? AND ?",
+    ],
+    'daso' => [
+        'db'    => 'wazzup_daso',
+        'query' => "SELECT id as phone, last_message FROM contacts
+                     WHERE notifications > 0 AND notifications_admin > 0
+                     AND last_message BETWEEN ? AND ?",
+    ],
 ];
 
 $crm = $_GET['crm'] ?? null;
