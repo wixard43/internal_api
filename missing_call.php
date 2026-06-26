@@ -13,6 +13,10 @@ $crmConfig = [
         'prefix'       => 'missed_call_dds',
         'contact_base' => 'https://dds.miami/crm/',
     ],
+    'wow' => [
+        'prefix'       => 'missed_call_wow',
+        'contact_base' => 'https://btx.wowdentaldesigns.com/crm/',
+    ],
 ];
 
 $crm = $_GET['crm'] ?? null;
