@@ -17,6 +17,10 @@ $crmConfig = [
         'prefix'       => 'missed_call_wow',
         'contact_base' => 'https://btx.wowdentaldesigns.com/crm/',
     ],
+    'wow' => [
+        'prefix'       => 'missed_call_curvy',
+        'contact_base' => 'https://btx.curvyplasticsurgery.com/crm/',
+    ],
 ];
 
 $crm = $_GET['crm'] ?? null;
