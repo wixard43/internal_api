@@ -21,6 +21,10 @@ $crmConfig = [
         'prefix'       => 'missed_call_curvy',
         'contact_base' => 'https://btx.curvyplasticsurgery.com/crm/',
     ],
+    'ecl' => [
+        'prefix'       => 'missed_call_ecl',
+        'contact_base' => 'https://crm.eyescolorlab.com/crm/',
+    ],
 ];
 
 $crm = $_GET['crm'] ?? null;
