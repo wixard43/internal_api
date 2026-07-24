@@ -30,6 +30,13 @@ $crmConfig = [
                      WHERE m.contact = ?
                      ORDER BY m.timestamp ASC",
     ],
+    'ecl' => [
+        'db'    => 'wazzup_ecl',
+        'query' => "SELECT m.direction, m.timestamp
+                     FROM message m
+                     WHERE m.contact = ?
+                     ORDER BY m.timestamp ASC",
+    ],
 
 ];
 
